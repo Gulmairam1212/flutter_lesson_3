@@ -71,7 +71,10 @@ class CalculatorScreenState extends State<CalculatorScreen> {
               children: [
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.green,
+                    backgroundColor: Colors.blueGrey,
+                    shape: const RoundedRectangleBorder(),
+                    padding: const EdgeInsets.all(16),
+                    fixedSize: const Size(50, 50),
                   ),
                   onPressed: () {
                     setState(() {
@@ -80,46 +83,61 @@ class CalculatorScreenState extends State<CalculatorScreen> {
                   },
                   child: Text(
                     '+',
-                    style: TextStyle(color: Colors.blue, fontSize: 24),
+                    style: TextStyle(color: Colors.black, fontSize: 24),
                   ),
                 ),
 
                 ElevatedButton(
-                  style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
+                  style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blueGrey,
+                  shape: const RoundedRectangleBorder(),
+                  padding: const EdgeInsets.all(16),
+                  fixedSize: const Size(50,50),
+                  ),
                   onPressed: () {
                     setState(() {
-                      result = firstValue + secondValue;
+                      result = firstValue - secondValue;
                     });
                   },
                   child: Text(
                     '-',
-                    style: TextStyle(color: Colors.red, fontSize: 24),
+                    style: TextStyle(color: Colors.black, fontSize: 24),
                   ),
                 ),
 
                 ElevatedButton(
-                  style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.blueGrey,
+                    shape: const RoundedRectangleBorder(),
+                    padding: const EdgeInsets.all(16),
+                    fixedSize: const Size(50,50),
+                  ),
                   onPressed: () {
                     setState(() {
-                      result = firstValue + secondValue;
+                      result = firstValue * secondValue;
                     });
                   },
                   child: Text(
                     '*',
-                    style: TextStyle(color: Colors.orange, fontSize: 24),
+                    style: TextStyle(color: Colors.black, fontSize: 24),
                   ),
                 ),
 
                 ElevatedButton(
-                  style: ElevatedButton.styleFrom(backgroundColor: Colors.blueGrey),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.blueGrey,
+                    shape: const RoundedRectangleBorder(),
+                    padding: const EdgeInsets.all(16),
+                    fixedSize: const Size(50,50),
+                    ),
                   onPressed: () {
                     setState(() {
-                      result = firstValue + secondValue;
+                      result = firstValue / secondValue;
                     });
                   },
                   child: Text(
                     '/',
-                    style: TextStyle(color: Colors.brown, fontSize: 24),
+                    style: TextStyle(color: Colors.black, fontSize: 24),
                   ),
                 ),
 
@@ -129,7 +147,7 @@ class CalculatorScreenState extends State<CalculatorScreen> {
 
             ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.amber,
+                    backgroundColor: Colors.black,
                   ),
                   onPressed: resetCalculator,
                   child: Row(
@@ -147,7 +165,7 @@ class CalculatorScreenState extends State<CalculatorScreen> {
               width: double.infinity,
               padding: EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: Colors.pink,
+                color: Colors. blueGrey,
                 borderRadius: BorderRadius.circular(12),
               ),
 
